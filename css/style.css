@@ -1,0 +1,175 @@
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-weight: 100;
+  text-align: center;
+}
+
+a {
+  cursor: pointer;
+}
+
+header {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  max-width: 1220px;
+  height: 60px;
+  padding: 20px 35px;
+  z-index: 45;
+}
+
+.list {
+  height: 100%;
+  line-height: 40px;  
+}
+
+header img, .leftList {
+  float: left;
+}
+
+.rightList {
+  float: right;
+}
+
+.leftList ul li, .rightList ul li {
+  padding: 0 15px;
+  list-style: none;
+  display: inline;
+  height: 100%;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+button[type=submit] {
+  padding: 10px 15px;
+  background-color: #11A3EB;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+video {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-video {
+  width: 100%;
+  height: 0;
+  padding-bottom: 40.4%;
+  overflow: hidden;
+  position: relative;
+}
+
+.start {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 20.4%;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h3 {
+  margin-top: 25px;
+  font-size: 22px;
+}
+
+.start button {
+  margin-top: 35px; 
+  padding: 15px 110px; 
+  font-size: 18px;
+}
+
+.download-bar {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 30px;
+  line-height: 10px;
+  text-align: center;
+  margin-top: -1%;
+}
+
+.download-bar img {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+.download-bar p {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000000;
+}
+
+main {
+  color: #000000;
+}
+
+main h1 {
+  padding-top: 90px;
+}
+
+main h3 {
+  color: #8F96A0;
+  margin-bottom: 50px;
+}
+
+main section {  
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center; 
+          justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+section article {
+  margin: 0 30px;
+}
+
+h4 {
+  text-align: left;
+  margin: 20px;
+  font-size: 20px;
+}
+
+article p {
+  text-align: left;
+  margin: 20px 20px;
+  line-height: 150%;
+  color: #8F96A0;
+}
+
+article a {
+  color: #11A3EB;
+}
