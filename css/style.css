@@ -12,10 +12,10 @@
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #ffffff;
-  font-weight: 100;
   text-align: center;
+  color: #ffffff;
+  font-family: FontAwesome, Helvetica, Arial, sans-serif;
+  font-weight: 100;
 }
 
 a {
@@ -47,12 +47,20 @@ header img, .leftList {
 }
 
 .leftList ul li, .rightList ul li {
-  padding: 0 15px;
-  list-style: none;
   display: inline;
   height: 100%;
+  padding: 0 15px;
+  list-style: none;
   color: #ffffff;
   font-size: 15px;
+}
+
+.fa-angle-down {
+  padding-left: 5px;
+}
+
+.icon {
+  padding-left: 15px;
 }
 
 button[type=submit] {
@@ -65,29 +73,29 @@ button[type=submit] {
   cursor: pointer;
 }
 
-video {
+.section-video {
+  position: relative;
   width: 100%;
+  height: 0;
+  padding-bottom: 40.4%;
+  overflow: hidden;
+}
+
+video {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-}
-
-.section-video {
   width: 100%;
-  height: 0;
-  padding-bottom: 40.4%;
-  overflow: hidden;
-  position: relative;
 }
 
 .start {
-  width: 100%;
-  text-align: center;
   position: absolute;
   bottom: 20.4%;
+  width: 100%;
+  text-align: center;
 }
 
 h1 {
@@ -108,10 +116,10 @@ h3 {
 .download-bar {
   position: relative;
   width: 100%;
-  background-color: #ffffff;
   padding: 30px;
-  line-height: 10px;
+  background-color: #ffffff;
   text-align: center;
+  line-height: 10px;
   margin-top: -1%;
 }
 
@@ -124,6 +132,7 @@ h3 {
 .download-bar p {
   display: inline-block;
   vertical-align: middle;
+  line-height: 150%;
   color: #000000;
 }
 
@@ -132,16 +141,15 @@ main {
 }
 
 main h1 {
-  padding-top: 90px;
+  padding-top: 50px;
 }
 
 main h3 {
-  color: #8F96A0;
   margin-bottom: 50px;
+  color: #8F96A0;
 }
 
 main section {  
-  width: 100%;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -150,26 +158,100 @@ main section {
   -webkit-justify-content: center; 
           justify-content: center;
   flex-wrap: wrap;
-  padding-bottom: 30px;
+  width: 100%;
 }
 
-section article {
-  margin: 0 30px;
+.image {
+  margin: 0 30px 20px;
 }
 
 h4 {
-  text-align: left;
   margin: 20px;
+  text-align: left;
   font-size: 20px;
 }
 
 article p {
-  text-align: left;
   margin: 20px 20px;
   line-height: 150%;
+  text-align: left;
   color: #8F96A0;
 }
 
-article a {
+.learnmore {
   color: #11A3EB;
+}
+
+/*** MEDIA QUERIES ***/
+@media screen and (max-width: 1060px) {
+
+  .section-video {
+    position: relative;
+    width: 200%;
+    height: 0;
+    padding-bottom: 500px;
+    overflow: hidden;
+    transform: translate(-25%, 0);
+  }
+
+  .download-bar {
+    padding: 20px;
+  }
+
+  .download-bar img {
+    margin-bottom: 10px;
+  }
+
+  main section { 
+    flex-direction: column;
+  }  
+
+  .article {
+    width: 80%;
+    margin: 0 auto 50px;
+  }
+
+  .image {
+    width: 100%;
+    margin: auto;
+  }
+
+}
+
+@media screen and (max-width: 630px) {
+  
+  .section-video {
+    position: relative;
+    width: 350%;
+    height: 0;
+    padding-bottom: 500px;
+    overflow: hidden;
+    transform: translate(-35.7%, 0);
+  }
+    
+  header ul {
+    display: none;
+  }
+
+  .download-bar p {
+    font-size: 14px;  
+  }
+
+  .start {
+    top: 180px;
+  }
+
+  main h1 {
+    padding-top: 10px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
 }
