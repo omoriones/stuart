@@ -186,11 +186,11 @@ article p {
 @media screen and (max-width: 1060px) {
 
   .section-video {
-    position: relative;
-    width: 200%;
-    height: 0;
     padding-bottom: 500px;
-    overflow: hidden;
+  }
+
+  video {
+    width: 200%;
     transform: translate(-25%, 0);
   }
 
@@ -219,16 +219,12 @@ article p {
 }
 
 @media screen and (max-width: 630px) {
-  
-  .section-video {
-    position: relative;
+
+  video {
     width: 350%;
-    height: 0;
-    padding-bottom: 500px;
-    overflow: hidden;
     transform: translate(-35.7%, 0);
   }
-    
+
   header ul {
     display: none;
   }
@@ -252,6 +248,17 @@ article p {
   h3 {
     font-size: 20px;
     font-weight: normal;
+  }
+  
+  .article {
+    position: relative;
+  }
+  .image {
+    width: 100%;
+    margin: auto;
+    z-index: -1;
+    position: absolute;
+    right: 0;
   }
 
 }
